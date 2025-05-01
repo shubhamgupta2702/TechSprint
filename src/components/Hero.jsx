@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import heroImg from '../assets/hero.png';
 import { IoArrowForwardCircleSharp } from "react-icons/io5";
 import { fadeIn } from "../utilis/animationVariants";
+import AutoQuoteChanger from './AutoQuoteChanger';
 
 const Hero = () => {
     return (
@@ -28,6 +29,8 @@ const Hero = () => {
                 <div
                     className="md:w-1/2"
                 >
+                    <AutoQuoteChanger/>
+
                     <motion.h1
                         variants={fadeIn("down", 0.2)}
                         initial="hidden"
