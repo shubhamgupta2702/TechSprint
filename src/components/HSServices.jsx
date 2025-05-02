@@ -29,8 +29,8 @@ const HSServices = () => {
                       initial="hidden"
                       whileInView={"show"}
                       viewport={{ once: false, amount: 0.7 }}
-                      className="w-3/5 mb-14 text-gray-500 text-lg">
-        <p >
+                      >
+        <p className="w-full mb-14 text-gray-500 text-lg text-center justify-center items-center">
           Find the best support for your mental wellbeing.
         </p>
         </motion.div>
@@ -38,11 +38,7 @@ const HSServices = () => {
 
 
         
-        <motion.div 
-                      variants={fadeIn("down", 0.2)}
-                      initial="hidden"
-                      whileInView={"show"}
-                      viewport={{ once: false, amount: 0.7 }}>
+        
         <div className="flex flex-wrap gap-6 items-center justify-center">
           <NavLink to="games-category">
           <div className="group flex flex-col items-center py-8 text-sm bg-[#f7f8fc] border border-gray-300 w-96 rounded-md cursor-pointer hover:border-white hover:bg-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
@@ -77,7 +73,7 @@ const HSServices = () => {
               alt="userImage2"
             />
             <h2
-              className="text-gray-700 text-xl font-medium mt-7 font-extrabold"
+              className="text-gray-700 text-xl  mt-7 font-extrabold"
             >
               Mindful Content
             </h2>
@@ -99,7 +95,7 @@ const HSServices = () => {
               alt="userImage3"
             />
             <h2
-              className="text-gray-700 text-xl font-medium font-extrabold mt-7"
+              className="text-gray-700 text-xl font-extrabold mt-7"
             >
               Yoga
             </h2>
@@ -127,7 +123,7 @@ const HSServices = () => {
               alt="userImage1"
             />
             <h2
-              className="text-gray-700 text-xl font-medium mt-7 font-extrabold"
+              className="text-gray-700 text-xl font-extrabold mt-7 "
             >
               Music
             </h2>
@@ -152,7 +148,7 @@ const HSServices = () => {
               alt="userImage2"
             />
             <h2
-              className="text-gray-700 text-xl font-medium font-extrabold mt-7"
+              className="text-gray-700 text-xl font-extrabold  mt-7"
             >
 
               Journals
@@ -177,7 +173,7 @@ const HSServices = () => {
               alt="userImage3"
             />
             <h2
-              className="text-gray-700 text-xl font-extrabold font-medium mt-7"
+              className="text-gray-700 text-xl font-extrabold  mt-7"
             >
               Mood Tracking
             </h2>
@@ -189,7 +185,7 @@ const HSServices = () => {
             
           </div>
         </div>
-        </motion.div>
+        
       </div>
     </>
   );
