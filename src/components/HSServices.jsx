@@ -2,7 +2,7 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 import {motion} from 'framer-motion'
 import {fadeIn} from '../utilis/animationVariants';
-import Antistresstherepy from "../assets/antistresstherepy.png";
+import Antistresstherepy from "../assets/antistress.png";
 import ChildrenTherepy from "../assets/ChildrenTherepy.png"
 import Couplestheraoy from "../assets/Couplestheraoy.png"
 import depressiontherapy from "../assets/depressiontherapy.png"
