@@ -3,35 +3,38 @@ import { motion } from 'framer-motion';
 import {fadeIn} from '../utilis/animationVariants';
 const packages = [
   {
-    name: 'Bronze Package',
-    price: '$99',
+    name: 'Current Plan',
+    price: 'FREE',
     description: 'Ideal for individuals or small businesses looking to get started with mental wellness.',
     features: [
-      'Access to basic wellness resources',
-      'Weekly mental wellness tips',
-      'Community support group access',
+      'Limited Journal Entries',
+      'Access to a few games',
+      'mood tracking (weekly log)',
+      'read 5 articles per month',
+      'Access to one basic sound for relaxation',
     ],
   },
   {
-    name: 'Silver Package',
-    price: '$199',
+    name: 'Premium Plan',
+    price: 'Rs 499/-',
     description: 'A great choice for growing businesses with additional features and support for mental wellness.',
     features: [
-      'All Bronze Package features',
-      'Monthly guided meditation sessions',
-      'Personalized wellness plan',
-      'Access to expert webinars',
+      'Unlimited Journals',
+      'All puzzle games unlocked',
+      'Advance mood tracker (daily update)',
+      'read unlimited articles',
+      'Access to premium sound for relaxation',
     ],
   },
   {
-    name: 'Gold Package',
-    price: '$299',
+    name: 'Premium Plus Plan',
+    price: 'Rs 999/-',
     description: 'Perfect for larger businesses needing advanced mental wellness features and premium support.',
     features: [
-      'All Silver Package features',
-      'Weekly one-on-one coaching sessions',
-      'Advanced mental wellness tracking tools',
-      '24/7 access to mental wellness experts',
+      'Weekly live group therapy/ meditation sessions',
+      'personalised mental health roadmap',
+      'Priority support from mental wellness experts',
+      'Private notes section',
     ],
   },
 ];
@@ -86,7 +89,7 @@ const Pricing = () => {
                 onClick={handleScrollToContact}
                 className='bg-primary text-white px-4 py-2 rounded'
               >
-                Get Started
+                Buy Now
               </button>
             </motion.div>
           ))}

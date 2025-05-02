@@ -22,7 +22,7 @@ const Services = () => {
                         What Can We Do Together
                     </h2>
                     <p className='md:w-1/2 mx-auto'>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    Let’s take the first step toward healing, growth, and balance—together. Explore personalized care, guided practices, and ongoing support.
                     </p>
                 </motion.div>
 
@@ -36,10 +36,10 @@ const Services = () => {
                            viewport={{ once: false, amount: 0.7 }}
                             className="flex flex-wrap justify-between items-center md:gap-8 gap-4"
                         >
-                            <Tab>Couple Counseling</Tab>
-                            <Tab>Parenting Skills</Tab>
-                            <Tab>Feeling Stuck</Tab>
-                            <Tab>Self-Confidence</Tab>
+                            <Tab>Managing Stress & Anxiety</Tab>
+                            <Tab>Mindful Yoga Practices</Tab>
+                            <Tab>Boosting Mental Clarity</Tab>
+                            <Tab>Access to Certified Therapists</Tab>
                         </motion.TabList>
 
                         <TabPanel>
@@ -51,13 +51,13 @@ const Services = () => {
                                 className='flex flex-col md:flex-row gap-8 mt-8'
                             >
                                 <div className="md:w-1/2 bg-white rounded-lg p-12 font-secondary">
-                                    <h3 className="text-3xl font-semibold text-primary mb-4">Couple Counseling</h3>
-                                    <p className="mb-8">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <h3 className="text-3xl font-semibold text-primary mb-4"> Counseling</h3>
+                                    <p className="mb-8">We provide compassionate, expert-led counseling to support mental well-being, emotional growth, and stress relief through personalized, confidential sessions..</p>
                                     <h4 className='text-xl font-medium text-black mb-4'>Benefits</h4>
                                     <ul className="list-disc list-inside space-y-3">
-                                        <li>Understanding Relationship Dynamics</li>
-                                        <li>Effective Communication Techniques</li>
-                                        <li>Conflict Resolution Strategies</li>
+                                        <li>Personalized Guidance</li>
+                                        <li>Emotional Relief</li>
+                                        <li>Confidential & Safe Space</li>
                                     </ul>
                                 </div>
                                 <div className="md:w-1/2">

@@ -28,7 +28,7 @@ const AutoQuoteChanger = () => {
   }, [quotes]);
 
   return (
-    <div className=" text-4xl font-secondary font-bold mb-4 md:w-4/5 leading-snug">
+    <div className="text-9xl  font-secondary font-bold mb-12 md:w-full leading-loose">
       
       <p className="text-lg italic">"{currentQuote}"</p>
       

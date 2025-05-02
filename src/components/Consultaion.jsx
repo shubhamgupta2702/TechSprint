@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const ConsultationSection = () => {
   return (
@@ -17,9 +18,11 @@ const ConsultationSection = () => {
           </p>
         </div>
         
+        <NavLink to="/appointment-form">
         <button className="bg-primary/60 hover:bg-primary/70 text-gray-900 py-3 px-8 rounded-full text-lg sm:text-xl transition duration-300 transform hover:scale-105  hover:shadow-2xl">
           Book Consultation
         </button>
+        </NavLink>
       </div>
     </div>
   );

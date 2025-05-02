@@ -1,8 +1,10 @@
 
 
 import React, { useState, useEffect } from 'react';
+import {NavLink} from "react-router-dom";
 import { motion } from 'framer-motion';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
+import mindsmile from "../assets/mindsmile.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,13 +55,13 @@ const Navbar = () => {
     <ul className="font-medium flex flex-col md:flex-row lg:space-x-8 sm:space-x-4 space-y-2 md:space-y-0 p-4 md:p-0">
       <li>
         <motion.a
-          href="#home"
           className={`text-white ${activeSection === 'home' ? 'isactive' : ''}`}
           onClick={(e) => { e.preventDefault(); handleScrollTo('home'); handleCloseMenu(); }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          Home
+          <NavLink to="/">Home</NavLink>
+          
         </motion.a>
       </li>
       <li>
@@ -97,13 +99,14 @@ const Navbar = () => {
       </li>
       <li>
         <motion.a
-          href="#testimonial"
+          
           className={`text-white ${activeSection === 'testimonial' ? 'isactive' : ''}`}
-          onClick={(e) => { e.preventDefault(); handleScrollTo('testimonial'); handleCloseMenu(); }}
+          
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          Testimonial
+          <NavLink to="appointment">Appointment</NavLink>
+          
         </motion.a>
       </li>
     </ul>
@@ -123,12 +126,12 @@ const Navbar = () => {
           </nav>
         </div>
         <div className="hidden md:block">
-          <a 
-            href="#" 
-            className="text-white bg-primary hover:bg-primary/90 px-4 py-2 rounded"
-          >
+          <NavLink to="signup"
+          
+            className="text-white bg-primary hover:bg-primary/90 px-4 py-2 rounded">
+          
             Create Account
-          </a>
+          </NavLink>
         </div>
         <div className="block md:hidden">
           <button 
@@ -149,13 +152,13 @@ const Navbar = () => {
           <ul className="flex flex-col p-4 space-y-3">
             {navLinks.props.children}
             <li className='py-2'>
-              <a 
+              <NavLink to="signup"
                 onClick={(e) => { e.preventDefault(); handleScrollTo(''); handleCloseMenu(); }}
-                href="#contact" 
+                 
                 className="text-white bg-primary hover:bg-primary/90 px-4 py-2 rounded"
               >
                 Create Account
-              </a>
+              </NavLink>
             </li>
           </ul>
         </motion.nav>

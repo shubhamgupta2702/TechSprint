@@ -24,7 +24,7 @@ const Footer = () => {
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
                     className='text-para'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        A calming wellness app offering games, tools, and expert support to help reduce stress, anxiety, and improve mental well-being.
                     </motion.p>
                     <motion.div 
                     variants={fadeIn("up", 0.2)}

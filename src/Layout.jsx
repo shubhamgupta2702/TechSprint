@@ -18,14 +18,6 @@ const Layout = () => {
     <>
       <Navbar/>
       <Outlet/>
-      <HSServices/>
-      <Services/>
-      <WorkingStep/>
-      <Pricing/>
-      <Testimonial/>
-      <Contact/>
-      
-      <ConsultationSection/>
       <Footer/>
     </>
   )

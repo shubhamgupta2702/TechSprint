@@ -65,7 +65,7 @@ const Contact = () => {
                 </div>
                 <div className='space-y-1'>
                   <h3 className='text-xl font-medium'>24 Hours Services</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing</p>
+                  <p> Always Available for users</p>
                 </div>
               </div>
               <div className='flex items-start gap-4'>
@@ -74,7 +74,8 @@ const Contact = () => {
                 </div>
                 <div className='space-y-1'>
                   <h3 className='text-xl font-medium'>Expert Therapist</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing</p>
+                  <p> Always Available for users
+                  </p>
                 </div>
               </div>
               <div className='flex items-start gap-4'>
@@ -83,7 +84,7 @@ const Contact = () => {
                 </div>
                 <div className='space-y-1'>
                   <h3 className='text-xl font-medium'>High Quality Core</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing</p>
+                  <p>Compassionate Support 24/7</p>
                 </div>
               </div>
               <div className='flex items-start gap-4'>
@@ -92,7 +93,7 @@ const Contact = () => {
                 </div>
                 <div className='space-y-1'>
                   <h3 className='text-xl font-medium'>Trusted Clinic</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing</p>
+                  <p>Reliable & Reputed</p>
                 </div>
               </div>
             </motion.div>

@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 import {motion} from 'framer-motion'
 import {fadeIn} from '../utilis/animationVariants';
 import Antistresstherepy from "../assets/antistresstherepy.png";
@@ -43,6 +44,7 @@ const HSServices = () => {
                       whileInView={"show"}
                       viewport={{ once: false, amount: 0.7 }}>
         <div className="flex flex-wrap gap-6 items-center justify-center">
+          <NavLink to="games-category">
           <div className="group flex flex-col items-center py-8 text-sm bg-[#f7f8fc] border border-gray-300 w-96 rounded-md cursor-pointer hover:border-white hover:bg-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
             <img
@@ -62,7 +64,10 @@ const HSServices = () => {
             </p>
            
           </div>
+          </NavLink>
 
+
+<NavLink to="blog">
           <div
             className="group flex flex-col items-center py-8 text-sm bg-[#f7f8fc] border border-gray-300 w-96 rounded-md cursor-pointer hover:border-white hover:bg-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
@@ -83,6 +88,7 @@ const HSServices = () => {
             </p>
             
           </div>
+          </NavLink>
 
           <div
             className="group flex flex-col items-center py-8 px-2 text-sm bg-[#f7f8fc] border border-gray-300 w-96 rounded-md cursor-pointer hover:border-white hover:bg-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
@@ -109,6 +115,7 @@ const HSServices = () => {
         {/* 2nd line card */}
 
         <div className="flex flex-wrap gap-6 pt-6 items-center justify-center">
+          <NavLink to="music">
           <div
             className="group flex flex-col items-center py-8 text-sm bg-[#f7f8fc] border border-gray-300 w-96 rounded-md cursor-pointer hover:border-white
 
@@ -131,7 +138,9 @@ const HSServices = () => {
             </p>
             
           </div>
+          </NavLink>
 
+          <NavLink to="journals">
           <div
             className="group flex flex-col items-center py-8 text-sm bg-[#f7f8fc] border border-gray-300 w-96 rounded-md cursor-pointer hover:border-white
 
@@ -145,15 +154,17 @@ const HSServices = () => {
             <h2
               className="text-gray-700 text-xl font-medium font-extrabold mt-7"
             >
+
               Journals
             </h2>
             <p
               className="text-gray-500/80 text-base leading-8 mt-5"
-            >
+              >
               Write freely or use prompts to reflect, declutter your mind, and boost clarity.
             </p>
             
           </div>
+              </NavLink>
 
           <div
             className="group flex flex-col items-center py-8 text-sm bg-[#f7f8fc] border border-gray-300 w-96 rounded-md cursor-pointer hover:border-white
