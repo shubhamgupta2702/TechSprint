@@ -2,13 +2,14 @@ import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import footerLogo from '../assets/footer-logo.svg';
 import {motion} from 'framer-motion'
+import logofoot from "../assets/logofooter.png"
 import {fadeIn} from '../utilis/animationVariants'
 
 const Footer = () => {
     return (
         <footer className='py-12 bg-gray-100 px-8'>
             <div className='container mx-auto grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-8'>
-                {/* First Column: Logo, Text, Social Icons */}
+                
                 <div className='space-y-6 mr-14'>
                     <motion.div 
                     variants={fadeIn("up", 0.2)}
@@ -16,7 +17,7 @@ const Footer = () => {
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
                     className='flex items-center space-x-2'>
-                        <img src="" alt='Logo' className='w-32 h-auto' />
+                        <img src={logofoot} alt='Logo' className='w-32 h-auto' />
                     </motion.div>
                     <motion.p 
                     variants={fadeIn("up", 0.2)}
@@ -47,7 +48,7 @@ const Footer = () => {
                     </motion.div>
                 </div>
 
-                {/* Second Column: Quick Links */}
+               
                 <motion.div 
                 variants={fadeIn("down", 0.2)}
                 initial="hidden"
@@ -63,7 +64,6 @@ const Footer = () => {
                     </ul>
                 </motion.div>
 
-                {/* Third Column: Support */}
                 <motion.div
                 variants={fadeIn("up", 0.2)}
                 initial="hidden"
@@ -79,7 +79,6 @@ const Footer = () => {
                     </ul>
                 </motion.div>
 
-                {/* Fourth Column: Contact Info */}
                 <motion.div
                 variants={fadeIn("up", 0.2)}
                 initial="hidden"

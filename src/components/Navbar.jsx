@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import {NavLink} from "react-router-dom";
 import { motion } from 'framer-motion';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
-import mindsmile from "../assets/mindsmile.png";
+import mindlogo from '../assets/mindlogo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,7 +83,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          About Us
+          Mood Log
         </motion.a>
       </li>
       <li>
@@ -116,8 +116,8 @@ const Navbar = () => {
     <header className="bg-heroBg text-white py-6 px-4 fixed top-0 left-0 right-0 z-10">
       <div className="container mx-auto flex justify-between items-center h-full">
         <div className="text-white text-lg font-semibold">
-          <a href="/">
-            <img src="" alt="logo" />
+          <a href="/" className='flex flex-wrap'>
+            <img src={mindlogo}  className='p-0 h-11 w-40 md:h-10' alt="logo" />
           </a>
         </div>
         <div className="hidden md:flex flex-grow justify-center">
@@ -126,12 +126,14 @@ const Navbar = () => {
           </nav>
         </div>
         <div className="hidden md:block">
-          <NavLink to="signup"
+          <a href="signup">
           
+            <div
             className="text-white bg-primary hover:bg-primary/90 px-4 py-2 rounded">
           
             Create Account
-          </NavLink>
+            </div>
+          </a>
         </div>
         <div className="block md:hidden">
           <button 

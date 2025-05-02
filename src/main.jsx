@@ -15,6 +15,10 @@ import Music from './components/Music.jsx'
 import Blog from './components/Blog.jsx'
 import SignUp from './components/SignUp.jsx'
 import SignIn from './components/SignIn.jsx'
+import YogaCard from './components/YogaCard.jsx'
+import Breathing from './components/Breathing.jsx'
+import Meditation from './components/Meditation.jsx'
+import Yoga from './components/Yoga.jsx'
 
 const router = createBrowserRouter([
   {
@@ -61,6 +65,18 @@ const router = createBrowserRouter([
       {
         path:"signin",
         element:<SignIn/>
+      },{
+        path:"yogacards",
+        element:<YogaCard/>
+      },{
+        path:"yogacards/breathing",
+        element:<Breathing/>
+      },{
+        path:"yogacards/meditation",
+        element:<Meditation/>
+      },{
+        path:"yogacards/yoga",
+        element:<Yoga/>
       }
     ]
 }])

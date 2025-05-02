@@ -12,6 +12,7 @@ import onlinetherepy from "../assets/onlinetherepy.png"
 const HSServices = () => {
   return (
     <>
+  
       <div className="flex flex-col items-center text-center pb-6 pt-28 bg-[#f7f8fc]">
         <motion.div 
                       variants={fadeIn("down", 0.2)}
@@ -86,7 +87,7 @@ const HSServices = () => {
           </div>
           </NavLink>
 
-          <div
+          <NavLink to="yogacards"
             className="group flex flex-col items-center py-8 px-2 text-sm bg-[#f7f8fc] border border-gray-300 w-96 rounded-md cursor-pointer hover:border-white hover:bg-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
             <img
@@ -105,11 +106,10 @@ const HSServices = () => {
               Follow short, guided yoga routines for relaxation, anxiety relief, and better sleep.
             </p>
             
-          </div>
+          </NavLink>
         </div>
 
-        {/* 2nd line card */}
-
+      
         <div className="flex flex-wrap gap-6 pt-6 items-center justify-center">
           <NavLink to="music">
           <div
@@ -175,7 +175,7 @@ const HSServices = () => {
             <h2
               className="text-gray-700 text-xl font-extrabold  mt-7"
             >
-              Mood Tracking
+              Mood Log
             </h2>
             <p
               className="text-gray-500/80 text-base leading-8 mt-5"
