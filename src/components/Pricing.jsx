@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import {fadeIn} from '../utilis/animationVariants';
+import { NavLink } from 'react-router-dom';
 const packages = [
   {
     name: 'Current Plan',
@@ -85,12 +86,14 @@ const Pricing = () => {
                   <li key={idx}>{feature}</li>
                 ))}
               </ul>
+              <NavLink to="signup">
               <button
                 onClick={handleScrollToContact}
                 className='bg-primary text-white px-4 py-2 rounded'
               >
                 Buy Now
               </button>
+              </NavLink>
             </motion.div>
           ))}
         </div>
