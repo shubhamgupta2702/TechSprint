@@ -1,0 +1,79 @@
+/* FixedTag.css */
+.fixed-tag {
+    position: fixed;
+    right: 40px;
+    bottom: 105px;
+    background: linear-gradient(135deg, #567eff, #a45ff8);
+    color: white;
+    padding: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(103, 132, 247, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: none;
+    outline: none;
+  }
+  
+  .tag-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .tag-text {
+    margin-left: 10px;
+    margin-right: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+  
+  .fixed-tag:hover {
+    box-shadow: 0 8px 25px rgba(103, 132, 247, 0.4);
+    transform: translateY(-3px);
+  }
+  
+  .fixed-tag:hover .tag-icon {
+    transform: rotate(-45deg);
+  }
+  
+  .pulse-effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    z-index: -1;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+    70% {
+      transform: scale(1.3);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .fixed-tag {
+      right: 20px;
+      bottom: 20px;
+      padding: 15px;
+    }
+    
+    .tag-text {
+      display: none;
+    }
+  }
