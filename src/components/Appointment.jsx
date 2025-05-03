@@ -42,7 +42,8 @@ const Appointment = () => {
         <div className="flex items-center divide-x text-black">
             <button type="button" className="flex items-center justify-center gap-2 w-full py-3">
             <img width="18" height="14" src="https://img.icons8.com/material-outlined/24/calendar--v1.png" alt="calendar--v1"/>
-                Book Appointment
+            <NavLink to="/appointment-form">Book Appointment</NavLink>
+                
             </button>
             
         </div>
@@ -58,7 +59,7 @@ const Appointment = () => {
         <div className="flex items-center divide-x text-black">
             <button type="button" className="flex items-center justify-center gap-2 w-full py-3">
             <img width="18" height="14" src="https://img.icons8.com/material-outlined/24/calendar--v1.png" alt="calendar--v1"/>
-                Book Appointment
+            <NavLink to="/appointment-form">Book Appointment</NavLink>
             </button>
             
         </div>
@@ -77,7 +78,7 @@ const Appointment = () => {
         <div className="flex items-center divide-x text-black">
             <button type="button" className="flex items-center justify-center gap-2 w-full py-3">
             <img width="18" height="14" src="https://img.icons8.com/material-outlined/24/calendar--v1.png" alt="calendar--v1"/>
-                Book Appointment
+            <NavLink to="/appointment-form">Book Appointment</NavLink>
             </button>
             
         </div>
@@ -93,7 +94,7 @@ const Appointment = () => {
         <div className="flex items-center divide-x text-black">
             <button type="button" className="flex items-center justify-center gap-2 w-full py-3">
             <img width="18" height="14" src="https://img.icons8.com/material-outlined/24/calendar--v1.png" alt="calendar--v1"/>
-                Book Appointment
+            <NavLink to="/appointment-form">Book Appointment</NavLink>
             </button>
             
         </div>
@@ -109,7 +110,7 @@ const Appointment = () => {
         <div className="flex items-center divide-x text-black">
             <button type="button" className="flex items-center justify-center gap-2 w-full py-3">
             <img width="18" height="14" src="https://img.icons8.com/material-outlined/24/calendar--v1.png" alt="calendar--v1"/>
-                Book Appointment
+            <NavLink to="/appointment-form">Book Appointment</NavLink>
             </button>
             
         </div>
