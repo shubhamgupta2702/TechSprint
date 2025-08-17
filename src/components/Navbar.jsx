@@ -127,6 +127,15 @@ const Navbar = () => {
           <NavLink to="appointment">Appointment</NavLink>
         </motion.a>
       </li>
+      <li>
+        <motion.a
+          className={`text-white ${activeSection === 'testimonial' ? 'isactive' : ''}`}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <NavLink to="hardware-announcement">Device (Launching Soon)</NavLink>
+        </motion.a>
+      </li>
     </ul>
   );
 

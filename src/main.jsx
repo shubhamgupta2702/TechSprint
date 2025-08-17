@@ -1,5 +1,4 @@
 import React from 'react'
-import { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
@@ -21,6 +20,7 @@ import Breathing from './components/Breathing.jsx'
 import Meditation from './components/Meditation.jsx'
 import Yoga from './components/Yoga.jsx'
 import MoodAnalyzer from './components/MoodAnanlyzer.jsx'
+import HardwareAnnouncement from './components/HardwareInfo.jsx'
 
 
 
@@ -86,6 +86,10 @@ const router = createBrowserRouter([
       {
         path:"mood-analyzer",
         element:<MoodAnalyzer/>
+      },
+      {
+        path:"hardware-announcement",
+        element:<HardwareAnnouncement/>
       }
     ]
   }])
